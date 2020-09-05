@@ -3,6 +3,7 @@ class Shoe
   attr_reader :brand
 
   def initialize(brand)
+    @brand = brand
     if !(BRANDS.include?(brand))
       BRAND >> @brand
   end
